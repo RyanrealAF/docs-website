@@ -101,14 +101,17 @@ li {
 }
 
 a {
-    color: var(--color-beige);
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: var(--color-bronze);
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 
 a:hover {
-    color: var(--color-bronze);
+    color: var(--color-beige);
     text-decoration: underline;
+    background-color: var(--color-deep-gray);
 }
 
 footer {
