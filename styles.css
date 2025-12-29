@@ -1,0 +1,130 @@
+:root {
+    --color-matte-black: #0a0a0a;
+    --color-charcoal: #1c1c1c;
+    --color-deep-gray: #2c2c2c;
+    --color-graphite: #3c3c3c;
+    --color-bronze: #b8860b;
+    --color-beige: #f5f5dc;
+    --font-header-primary: 'Archivo Black', sans-serif;
+    --font-header-secondary: 'Fira Sans Condensed', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--color-beige);
+    background-color: var(--color-matte-black);
+}
+
+header {
+    background-color: var(--color-charcoal);
+    color: var(--color-beige);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--color-graphite);
+}
+
+header h1 {
+    font-family: var(--font-header-primary);
+    font-size: 2.5rem;
+    color: var(--color-bronze);
+    margin: 0 0 0.5rem 0;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin: 0 0 1rem 0;
+}
+
+header nav a {
+    color: var(--color-beige);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    color: var(--color-bronze);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+module-section {
+    background-color: var(--color-charcoal);
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-graphite);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+module-section summary {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: var(--color-deep-gray);
+    transition: background-color 0.3s ease;
+}
+
+module-section summary:hover {
+    background-color: var(--color-graphite);
+}
+
+module-section h2 {
+    font-family: var(--font-header-secondary);
+    color: var(--color-bronze);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+module-section .content {
+    padding: 1rem;
+    border-top: 1px solid var(--color-graphite);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: var(--color-beige);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-bronze);
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--color-charcoal);
+    color: var(--color-beige);
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid var(--color-graphite);
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    main {
+        padding: 1rem 0.5rem;
+    }
+}
